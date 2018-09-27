@@ -1,0 +1,42 @@
+interface vegetables
+{
+	void tomatoes();
+	void onion();
+}
+class chopping implements vegetables
+{
+	public void tomatoes()
+	{
+	System.out.println("tasty");
+	}
+	public void onion()
+	{
+	System.out.println("yum");
+	}
+}
+class seasoning implements vegetables
+{
+	public void tomatoes()
+	{
+	System.out.println("salty");
+	}
+	public void onion()
+	{
+	System.out.println("peppery");
+	}
+}
+public class pizza
+{
+	public static void main(String[] args)
+	{
+	seasoning p= new seasoning();
+	chopping s= new chopping();
+	System.out.println("how is it?");
+	p.tomatoes();
+	p.onion();
+	s.tomatoes();
+	s.onion();
+	}
+}
+	
+
